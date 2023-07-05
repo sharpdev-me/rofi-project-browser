@@ -118,7 +118,7 @@ function isEmpty(projectPath: string): boolean {
 }
 
 function shouldBeCode(projectPath: string): boolean {
-    return fs.existsSync(joinPath(projectPath, "package.json")) || fs.existsSync(joinPath(projectPath, "tsconfig.json")) || fs.existsSync(joinPath(projectPath, "index.js")) || fs.existsSync(joinPath(projectPath, "index.ts")) || fs.existsSync(joinPath(projectPath, "main.py"));
+    return fs.existsSync(joinPath(projectPath, "package.json")) || fs.existsSync(joinPath(projectPath, "tsconfig.json")) || fs.existsSync(joinPath(projectPath, "index.js")) || fs.existsSync(joinPath(projectPath, "index.ts")) || fs.existsSync(joinPath(projectPath, "main.py")) || fs.existsSync(joinPath(projectPath, ".vscode"));
 }
 
 function shouldBeIdea(projectPath: string): boolean {
